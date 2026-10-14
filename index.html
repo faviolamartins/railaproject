@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAILA-Beadere Unipesoal,Lda</title>
+    <!-- Google Fonts: League Spartan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryBg: '#fdf8f3',
+                        secondaryBg: '#f5f0eb',
+                        accentRose: '#e4a4bd',
+                        charcoal: '#262626',
+                    },
+                    fontFamily: {
+                        spartan: ['"League Spartan"', 'sans-serif'],
+                    },
+                    transitionTimingFunction: {
+                        'luxury': 'cubic-bezier(0.16, 1, 0.3, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'League Spartan', sans-serif;
+            background-color: #fdf8f3;
+            color: #262626;
+            overflow-x: hidden;
+        }
+
+        /* Custom typography utility rules */
+        .heading-massive {
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            line-height: 0.8;
+        }
+        
+        .utility-label {
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+        }
+
+        .nav-label {
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        /* Floating Badge Animation */
+        @keyframes bounceSlow {
+            0%, 100% {
+                transform: translateY(-5%);
+            }
+            50% {
+                transform: translateY(5%);
+            }
+        }
+
+        .animate-bounce-slow {
+            animation: bounceSlow 4s ease-in-out infinite;
+        }
+
+        /* Reveal-Up Animation Classes */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Grayscale to Color Hover Effect */
+        .img-grayscale-hover {
+            filter: grayscale(100%);
+            transition: filter 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .img-grayscale-hover:hover {
+            filter: grayscale(0%);
+            transform: scale(1.08);
+        }
+
+        /* Glassmorphism Navigation */
+        .glass-nav {
+            background: rgba(253, 248, 243, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(38, 38, 38, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-primaryBg text-charcoal font-spartan antialiased selection:bg-accentRose selection:text-charcoal">
+
+    <!-- Fixed Navigation Bar (80px height) -->
+    <header class="fixed top-0 left-0 w-full h-[80px] z-50 glass-nav flex items-center justify-between px-6 md:px-12">
+        <div class="flex items-center">
+            <a href="#" class="font-black tracking-tighter text-xl md:text-2xl text-charcoal">RAILA-Beadere Unipesoal, Lda </a>
+        </div>
+        
+            </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-[120px] pb-24 px-6 md:px-12 flex flex-col justify-center max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+            
+            <!-- Left Side: Massive Headline -->
+            <div class="lg:col-span-7 space-y-8 reveal-up">
+                <div class="utility-label text-accentRose">Small Business Entrepreneur</div>
+                <h1 class="heading-massive text-[13vw] lg:text-[11vw] uppercase">
+                    RAILA <br>
+                    <span class="text-accentRose italic lowercase font-normal">Beadere</span>
+                </h1>
+                <p class="text-2xl font-light text-charcoal/70 max-w-xl leading-relaxed">
+                    RAILA-Beadere Unipesoal, Lda oferese catering ba kualker eventu, aluga bus, faan pulsa eletrisidade, no iha mos RAILA boarding house. 
+                </p>
+                
+            </div>
+
+            <!-- Right Side: Image Card & Floating Concierge Badge -->
+            <div class="lg:col-span-5 relative reveal-up" style="transition-delay: 200ms;">
+                <div class="relative overflow-hidden rounded-[24px] shadow-2xl aspect-[4/5] bg-secondaryBg">
+                    <img src="C:\Users\DELL\OneDrive\Desktop\Raila Company Project Website\RAILA-Beadere logo.jpeg" 
+                         alt="Luxury Landscape" 
+                         class="w-full h-full object-cover img-grayscale-hover"
+                         onerror="this.src='https://placehold.co/800x1000/e4a4bd/262626?text=Super+Travel'">
+                </div>
+
+                   </div>
+        </div>
+    </section>
+
+       <!-- Footer Section -->
+    <footer class="bg-secondaryBg pt-20 pb-12 px-6 md:px-12 border-t border-charcoal/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-charcoal/10">
+            
+            <!-- Left 5 Columns: Brand & Mission -->
+            <div class="lg:col-span-5 space-y-6">
+                <div class="font-black tracking-tighter text-2xl text-charcoal">RAILA-Beadere Unipesoal, Lda</div>
+                <p class="text-charcoal/70 max-w-sm text-sm font-light leading-relaxed">
+                    RAILA-Beadere oferese catering ba kualker eventu, aluga bus, faan pulsa eletrisidade, no iha mos RAILA boarding house.
+                </p>
+                <div class="utility-label text-accentRose">© 2026 RAILA-Beadere Unipesoal, Lda. All rights reserved.</div>
+            </div>
+
+            <!-- Right 7 Columns: 3 Sub-columns for Nav, Social, Locations -->
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                
+                <!-- Sub-column 1: Navigation -->
+                <div>
+                    <h4 class="utility-label text-accentRose pb-2 border-b-2 border-accentRose inline-block mb-6">Contact</h4>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <h1>Phone-Number:</h1>
+                        <li><a href="#Prone-Number" class="hover:text-accentRose transition-colors">+670 74202999/77231502</a></li>
+                        <h1>Whatsapp:</h1>
+                        <li><a href="#Whatsapp" class="hover:text-accentRose transition-colors">+670 74202999</a></li>
+                        <h1>Email:</h1>
+                        <li><a href="mailto:fredericomartins701@gmail.com" class="hover:text-accentRose transition-colors">fredericomartins701@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="utility-label text-accentRose pb-2 border-b-2 border-accentRose inline-block mb-6">Destinations</h4>
+                    <ul class="space-y-3 text-sm font-medium">
+                        <li><a href="https://www.google.com/maps/place/RAILA+Kost/data=!4m7!3m6!1s0x2d01dd001193e8a3:0xcf5106c6a6066d25!8m2!3d-8.5537078!4d125.5223969!16s%2Fg%2F11zgmd1r22!19sChIJo-iTEQDdAS0RJW0GpsYGUc8?authuser=0&hl=id&g_ep=EgoyMDI2MTAxMS4wIJJjKgBIAVAD&rclk=1" class="hover:text-accentRose transition-colors" target="_blank">Seroja, Golgota, Dili, Timor-Leste</a></li>
+                    </ul>
+                </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for Reveal-Up animation
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-up').forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        // Custom modal notification functions (avoiding alert)
+        function showNotification() {
+            const modal = document.getElementById('notification-modal');
+            const content = document.getElementById('modal-content');
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            modal.classList.add('opacity-100');
+            content.classList.remove('scale-95');
+            content.classList.add('scale-100');
+        }
+
+        function hideNotification() {
+            const modal = document.getElementById('notification-modal');
+            const content = document.getElementById('modal-content');
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0', 'pointer-events-none');
+            content.classList.remove('scale-100');
+            content.classList.add('scale-95');
+        }
+    </script>
+</body>
+</html>
